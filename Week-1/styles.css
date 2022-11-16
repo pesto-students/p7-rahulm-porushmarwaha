@@ -8,7 +8,7 @@ menu{
     list-style: none;
     padding-left: 25px;
 }
-#header{
+header{
     background-color: #3A3B3C;
     color :White;
     margin-left: 80px;
@@ -18,7 +18,7 @@ menu{
 
 
 }
-#navigation{
+nav{
     height :100%;
     width: 80px;
     margin-top: 0;
@@ -103,6 +103,5 @@ audio {
 }
 .playerIcon{
     color: white;
-    margin-left: 90px;
-    
+    margin-left: 90px;    
 }

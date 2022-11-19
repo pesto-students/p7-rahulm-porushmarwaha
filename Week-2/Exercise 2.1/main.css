@@ -1,0 +1,31 @@
+body{
+    background-color: Red;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px repeat(2, 500px) 100px;
+}
+
+header{
+    background-color: blue;
+    grid-column: span 12;
+}
+
+.left{
+    background-color:yellow;
+    grid-column: span 6;
+}
+
+.right{
+    background-color:blueviolet;
+    grid-column: span 6;
+}
+
+.form-section{
+    background-color :cadetblue;
+    grid-column: span 12;
+}
+
+footer{
+    background-color: aqua;
+    grid-column: span 12;
+}

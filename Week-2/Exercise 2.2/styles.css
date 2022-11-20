@@ -20,12 +20,14 @@ h1{
 /* Red Box */
 .grid-container:hover .red{
     animation-name: rotate-red;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 .red{
     animation-name: reverse-red;
-    animation-duration: 4s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 }
 @keyframes rotate-red {
     from{
@@ -49,12 +51,14 @@ h1{
 
  .grid-container:hover .yellow{
     animation-name: rotate-yellow;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 } 
 .yellow{
     animation-name: reverse-yellow;
-    animation-duration: 4s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 }
 @keyframes rotate-yellow {
     from {
@@ -76,12 +80,14 @@ h1{
 /* Blue BOX */
 .grid-container:hover .blue{
     animation-name: rotate-blue;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 .blue{
     animation-name: reverse-blue;
-    animation-duration: 4s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 }
 @keyframes rotate-blue {
     from {
@@ -107,12 +113,14 @@ h1{
 
 .grid-container:hover .green{
     animation-name: rotate-green;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 } 
 .green{
     animation-name: reverse-green;
-    animation-duration: 4s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 }
 
 @keyframes rotate-green {

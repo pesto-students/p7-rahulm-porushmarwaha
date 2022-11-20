@@ -1,19 +1,138 @@
 *{
     text-align: center;
- 
 }
 h1{
-    position:absolute
+    display: inline-block;
+   text-align: center;
+   margin-top: 6%;
 }
 
+ /* Without Using z index  */
 .grid-container{
+    display: inline-block;
+    position: fixed;
     display: grid;
     grid-template-columns: repeat(2, 100px);
     grid-template-rows: repeat(2, 100px);
-    position: fixed;
     margin-left: 42%;
 }
 
-.green:hover{
-    transform: rotate(200deg)
+div{
+    anima;
+}
+
+/* Red Box */
+.grid-container:hover .red{
+    animation-name: rotate-red;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.red{
+    animation-name: reverse-red;
+    animation-duration: 4s;
+}
+@keyframes rotate-red {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg) translateY(100px);
+    }
+}
+
+@keyframes reverse-red {
+    from{
+        transform: rotate(90deg) translateY(100px);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* Yellow BOX */
+
+ .grid-container:hover .yellow{
+    animation-name: rotate-yellow;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+} 
+.yellow{
+    animation-name: reverse-yellow;
+    animation-duration: 4s;
+}
+@keyframes rotate-yellow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-90deg) translateY(100px);
+    }
+}
+@keyframes reverse-yellow {
+    from{
+        transform: rotate(-90deg) translateY(100px);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* Blue BOX */
+.grid-container:hover .blue{
+    animation-name: rotate-blue;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.blue{
+    animation-name: reverse-blue;
+    animation-duration: 4s;
+}
+@keyframes rotate-blue {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-90deg) translateY(-100px);
+    }
+}
+
+@keyframes reverse-blue {
+    from{
+        transform: rotate(-90deg) translateY(-100px);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+/*  Green BOX */
+
+.grid-container:hover .green{
+    animation-name: rotate-green;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+} 
+.green{
+    animation-name: reverse-green;
+    animation-duration: 4s;
+}
+
+@keyframes rotate-green {
+ from{
+    transform: rotate(0deg);
+ }
+   to {
+    transform: rotate(90deg) translateY(-100px);
+   }
+}
+
+@keyframes reverse-green {
+    from{
+        transform: rotate(90deg) translateY(-100px);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }

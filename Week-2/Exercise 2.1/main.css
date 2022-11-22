@@ -1,60 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body{
-    background-color: Red;
+    background-color: white;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 2%; 
-    grid-template-rows: 100px repeat(2, 500px) 100px;
-    grid-row-gap: 2%;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 500px 700px 100px;
+    font-family: "Roboto", sans-serif;
 }
 
+/* Header CSS */
 header{
-    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    background-color: lightgray;
     grid-column: 1 / 3;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
-.left{
-    background-color:yellow;
+.header-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    align-content: space-between;
+}
+.brand-name{
+     margin:10px;
+     text-align: center;
+}
+.tag-line{
+    margin:10px;
+    margin-top: 5px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+
+/* Article CSS */
+main{
     grid-column: 1 / 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.article-container{
+    background-color:lightgray;
+    width: 48%;
+    text-align:justify;
+    margin-top:10px;
+    border-radius: 20px;
+}
+.image-container{
+    display:flex;
+    flex-direction: column;
+}
+.article-image{
+    height:250px;
+    width:400px;
+    align-self: center;
+    border-radius: 10px;    
+    margin-bottom: 10px;
+}
+.title, .article-content{
+    margin:15px;
 }
 
-.right{
-    background-color:blueviolet;
-    grid-column: 2 / 3;
-}
 
+ /* Form Section */
 .form-section{
     background-color :cadetblue;
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
+}
+.form-section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+}
+form{
+    flex:1;
+    background-color:azure;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 1px solid #999;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.form-header{
+    padding: 15px;
+    border-bottom: 1px solid #cccccc;
+}
+.form-body{
+    background:white;
+    padding: 5px 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+label{
+    color:darkblue;;
+    font-size:17px;
+    font-weight: 500;
 }
 
+.input-group {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+input[type=text], input[type=email] , input[type=password], textarea{
+   font-size:18px;
+   height: 34px;
+   padding-left: 10px;
+   padding-right: 10px;
+   color:#666;
+   border: 1px solid #d6d6d6;
+   border-radius: 4px;
+   background:white;
+   outline: none;
+}
+.radio-group{
+    display:flex;
+}
+.radio-group div{
+    flex:1;
+}
+textarea{
+    resize:none;
+    height:100px;
+}
+.form-footer{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #1bba93;
+    font-size:17px;
+    border:none;
+    border-radius: 5px;
+    color: #bcf5e7;
+    cursor: pointer;
+}
+
+/* footer CSS */
 footer{
-    background-color: aqua;
-    grid-column: 1 / 3;
+    background-color:beige;;
+    grid-column: 1 / 2;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+    margin-top: 10px;
 }
 
 
-/* Break point added for screen over 680px*/
-@media  screen and (max-width: 680px){
+
+/* Break point added for screen over 1368px*/
+@media  screen and (max-width: 1368px){
     body{
-        grid-template-rows: 100px repeat(3, 500px) 100px;
+        grid-template-rows: auto;
     }
     header{
-        grid-column: 1 / 3;
+        grid-column: 1 / 2;
+        margin:10px;
     }
-    .left{
-        grid-row: 2;
-        grid-column: 1 / 3;
+    .brand-name{
+        align-self:flex-start;
     }
-    .right{
-        grid-row: 3;
-        grid-column: 1 / 3;
-    }   
-    .form-Section{
-        grid-row: 4;
-        grid-column: 1 / 3;
-    }   
-    .footer{
-        grid-row: 6;
-        grid-column: 1 / 3;
+    .logo{
+        height: 70px;
+        width: 70px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    main{
+        grid-column: 1 / 2;
+        text-align:justify;
+        margin :10px;
+        margin-top: 0px;
+       }
+    
+       .article-container{
+        background-color:lightgray;
+        width: 100%;
+        text-align:justify;
+        border-radius: 20px;
+          
+        }
+        .article-image{
+        height:150px;
+        width:250px;
+        align-self: center;
+        border-radius: 10px;    
+        margin-bottom: 10px;
+        }
+    
+        .form-Section{
+            grid-row: 4;
+            grid-column: 1 / 2;
+        }   
+        footer{
+            grid-row: 6;
+            grid-column: 1 / 2;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:5px;
+        }
+
+        h4{
+            margin: 0px;
+        }
+
+}
+/* Break point added for screen over 1368px*/
+@media  screen and (max-width: 500px){
+    .row{
+        flex-direction: column;
+    }
+    .btn{
+        flex:1;
     }
 }

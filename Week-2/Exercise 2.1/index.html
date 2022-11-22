@@ -17,18 +17,158 @@
   </head>
   <body>
     <!-- Header -->
-    <header></header>
+    <header>
+      <img
+        class="logo"
+        src="./Images/falcon logo.jpg"
+        alt="falcon image logo"
+      />
+      <section class="header-container">
+        <h1 class="brand-name">Lorem Ipsum</h1>
+        <summary class="tag-line">
+          "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci velit..."
+        </summary>
+      </section>
+    </header>
 
     <!-- Section One-->
-    <section class="left"></section>
+    <main>
+      <article class="article-container image-container">
+        <h1 class="title">What is Lorem Ipsum?</h1>
+        <p class="article-content">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <img
+          class="article-image"
+          src="./Images/image.webp"
+          alt=" laptop image"
+        />
+      </article>
 
-    <!-- Section Two-->
-    <section class="right"></section>
+      <article class="article-container">
+        <h1 class="title">Where does it come from?</h1>
+        <p class="article-content">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC, making
+          it over 2000 years old. Richard McClintock, a Latin professor at
+          Hampden-Sydney College in Virginia, looked up one of the more obscure
+          Latin words, consectetur, from a Lorem Ipsum passage, and going
+          through the cites of the word in classical literature, discovered the
+          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
+          Evil) by Cicero, written in 45 BC. This book is a treatise on the
+          theory of ethics, very popular during the Renaissance. The first line
+          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+          section 1.10.32.
+        </p>
+      </article>
 
+      <article class="article-container">
+        <h1 class="title">Where can I get some?</h1>
+        <p class="article-content">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+          If you are going to use a passage of Lorem Ipsum, you need to be sure
+          there isn't anything embarrassing hidden in the middle of text. All
+          the Lorem Ipsum generators on the Internet tend to repeat predefined
+          chunks as necessary, making this the first true generator on the
+          Internet. It uses a dictionary of over 200 Latin words, combined with
+          a handful of model sentence structures, to generate Lorem Ipsum which
+          looks reasonable. The generated Lorem Ipsum is therefore always free
+          from repetition, injected humour, or non-characteristic words etc.
+        </p>
+      </article>
+    </main>
     <!-- Form Section -->
-    <section class="form-section"></section>
+    <section class="form-section article-container">
+      <form>
+        <div class="form-header">
+          <h1 style="font-size: 28px; text-align: center; color: #666">
+            Feedback Form
+          </h1>
+        </div>
 
+        <div class="form-body">
+          <div class="row">
+            
+            <div class="input-group">
+              <label>First Name </label>
+              <input type="text" placeholder="Enter first your name" required/>
+            </div>
+            
+            <div class="input-group">
+              <label>Last Name </label>
+              <input type="text" placeholder="Enter last your name" required/>
+            </div>
+          
+          </div>
+        
+
+          <div class="row">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" placeholder="Enter your password" required />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group">
+  
+              <label for="gender">Gender</label>
+              <div class="radio-group">
+                <div>
+                  <label for="Male"><input type="radio" id="male" name="gender" value="Male" checked /> Male</label>
+                </div>
+              </div>
+              <div class="radio-group">
+                <div>
+                  <label for="Female"> <input type="radio" id="female" name="gender" value="Female" /> Female</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group">
+              <label>Comments and Suggestions</label>
+              <textarea></textarea>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-footer">
+          <button class="btn">Submit</button>
+        </div>
+          
+        </div>
+      </form>
+    </section>
     <!-- Footer-->
-    <footer></footer>
+    <footer>
+      <h4>
+        help@lipsum.com 
+      </h4>
+
+      <p>
+        Privacy Policy
+      </p>
+    </footer>
   </body>
 </html>

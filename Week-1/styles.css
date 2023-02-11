@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+    font-family: 'Lato';
+}
+
+menu{
+    list-style: none;
+    padding-left: 25px;
+}
+header{
+    background-color: #3A3B3C;
+    color :White;
+    margin-left: 80px;
+    width: 100%;
+    height: 350px;
+    position:relative;
+
+
+}
+nav{
+    height :100%;
+    width: 80px;
+    margin-top: 0;
+    padding: 0;
+    position: fixed;
+    background-color: lightgray;
+    z-index: -1;
+    
+}
+.logo{
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 25px;
+    
+}
+.songInformation{
+    display: inline-block;
+    margin-left: 2%;
+    height: 250px;
+    margin-top: 1px
+   
+}
+.icons {
+    display:block;
+    padding-top: 65px;
+}
+.sectionIcon {
+    margin-top: 100px;
+    font-family: 'Lato';
+    margin-left: 0px;
+    padding-left: 10px;
+    display: inline;
+
+}
+.info{
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.musicList{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 100%;
+
+}
+.duration{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+td{
+   padding: 20px;
+}
+tr:nth-child(even){
+    background-color: lightgray;
+}
+button{
+    color: blue;
+    border-color: black;
+    border-width: 1px;
+}
+table{
+    border: none;
+}
+.player{
+    height: 90px;
+    width: 105%;
+    background-color: #0066ff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.cover{
+    height: 70px;
+    width: 70px;
+    margin-left:30px;
+
+}
+audio {
+    background-color: #0066ff;
+    margin-left: 100px;
+}
+.playerIcon{
+    color: white;
+    margin-left: 90px;    
+}
+
